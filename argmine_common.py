@@ -29,7 +29,7 @@ TEST_SPLIT_CSV = OUT_DIR / "test_judgments.csv"   # 02_gold_standard, drawn once
 M1_HITS_CSV = DATA_DIR / "m1_hits.csv"            # 03_keyword_methods
 
 # ── Settings shared by several notebooks ──────────────────────────────────────
-TEXT_FIELDS = ["court_reasoning", "conclusion"]   # judgment sections we classify
+TEXT_FIELDS = ["court_reasoning", "conclusion"]   # main run; four-section ablation is in archive_four_sections/
 ENCODER_NAME = "law-ai/InLegalBERT"
 N_BOOT = 1000
 SEED = 42
